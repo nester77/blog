@@ -14,6 +14,16 @@ public class Post {
    private String title, anons, full_text;
    private int views;
 
+    public Post() {
+    }
+
+    public Post(String title, String anons, String full_text) {
+        this.title = title;
+        this.anons = anons;
+        this.full_text = full_text;
+    }
+
+
     public Long getId() {
         return id;
     }
@@ -53,4 +63,6 @@ public class Post {
     public void setViews(int views) {
         this.views = views;
     }
+
+
 }
